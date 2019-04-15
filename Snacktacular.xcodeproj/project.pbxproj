@@ -20,6 +20,11 @@
 		DE845B0D22529C8C00856126 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE845B0C22529C8C00856126 /* GoogleService-Info.plist */; };
 		DEB1AF3E2250146500C1F568 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1AF3D2250146500C1F568 /* Spot.swift */; };
 		DEB1AF402250172200C1F568 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1AF3F2250172200C1F568 /* Spots.swift */; };
+		DECDF8042264F74B003401CD /* Double+roundTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECDF8032264F74B003401CD /* Double+roundTo.swift */; };
+		DECDF8062264F9EF003401CD /* UIView+addBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECDF8052264F9EF003401CD /* UIView+addBoard.swift */; };
+		DECDF80822650825003401CD /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECDF80722650825003401CD /* ReviewTableViewController.swift */; };
+		DECDF80A226512D0003401CD /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECDF809226512D0003401CD /* Review.swift */; };
+		DECDF80C22651B12003401CD /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECDF80B22651B12003401CD /* Reviews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		DE845B0C22529C8C00856126 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DEB1AF3D2250146500C1F568 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		DEB1AF3F2250172200C1F568 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
+		DECDF8032264F74B003401CD /* Double+roundTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+roundTo.swift"; sourceTree = "<group>"; };
+		DECDF8052264F9EF003401CD /* UIView+addBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBoard.swift"; sourceTree = "<group>"; };
+		DECDF80722650825003401CD /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
+		DECDF809226512D0003401CD /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		DECDF80B22651B12003401CD /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +97,16 @@
 				3E8390DF206597F600512DEA /* AppDelegate.swift */,
 				DEB1AF3F2250172200C1F568 /* Spots.swift */,
 				DEB1AF3D2250146500C1F568 /* Spot.swift */,
+				DECDF80B22651B12003401CD /* Reviews.swift */,
+				DECDF809226512D0003401CD /* Review.swift */,
 				3E8390E1206597F600512DEA /* SpotsListViewController.swift */,
 				3E0F960920659D9000AE450D /* SpotsTableViewCell.swift */,
 				3E0F960B2065A17500AE450D /* SpotDetailViewController.swift */,
 				3E0F960D2065AB6400AE450D /* SpotReviewsTableViewCell.swift */,
 				3E0F960F2065AC1A00AE450D /* SpotPhotosCollectionViewCell.swift */,
+				DECDF80722650825003401CD /* ReviewTableViewController.swift */,
+				DECDF8032264F74B003401CD /* Double+roundTo.swift */,
+				DECDF8052264F9EF003401CD /* UIView+addBoard.swift */,
 				3E8390E3206597F600512DEA /* Main.storyboard */,
 				3E8390E6206597F600512DEA /* Assets.xcassets */,
 				3E8390E8206597F600512DEA /* LaunchScreen.storyboard */,
@@ -304,14 +319,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DECDF80C22651B12003401CD /* Reviews.swift in Sources */,
 				3E8390E2206597F600512DEA /* SpotsListViewController.swift in Sources */,
 				3E0F96102065AC1A00AE450D /* SpotPhotosCollectionViewCell.swift in Sources */,
 				3E0F960C2065A17500AE450D /* SpotDetailViewController.swift in Sources */,
+				DECDF8062264F9EF003401CD /* UIView+addBoard.swift in Sources */,
+				DECDF80822650825003401CD /* ReviewTableViewController.swift in Sources */,
+				DECDF80A226512D0003401CD /* Review.swift in Sources */,
 				3E0F960E2065AB6400AE450D /* SpotReviewsTableViewCell.swift in Sources */,
 				3E0F960A20659D9000AE450D /* SpotsTableViewCell.swift in Sources */,
 				DEB1AF3E2250146500C1F568 /* Spot.swift in Sources */,
 				3E8390E0206597F600512DEA /* AppDelegate.swift in Sources */,
 				DEB1AF402250172200C1F568 /* Spots.swift in Sources */,
+				DECDF8042264F74B003401CD /* Double+roundTo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
