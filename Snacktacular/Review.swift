@@ -19,7 +19,7 @@ class Review{
     var documentID: String
     
     var dictionary: [String: Any] {
-        return ["title": title, "text": text, "rating": rating, "reviewerUserID": reviewerUserID, "date": date, "documentID": documentID]
+        return ["title": title, "text": text, "rating": rating, "reviewerUserID": reviewerUserID, "date": date]
     }
     
     init(title: String, text: String, rating: Int, reviewerUserID: String, date: Date, documentID: String) {
@@ -57,7 +57,9 @@ class Review{
                     completed(false)
                 } else {
                     print("^^^ Document updated with ref ID \(ref.documentID)")
-                    completed(true)
+                    spot.updateAverageRating {
+                        completed(true)
+                    }
                 }
             }
         } else {
@@ -68,6 +70,21 @@ class Review{
                     completed(false)
                 } else {
                     print("^^^ New document created with ref ID \(ref?.documentID ?? "unknown")")
+                    spot.updateAverageRating {
+                        completed(true)
+                    }
+                }
+            }
+        }
+    }
+    func deleteData(spot: Spot, completed: @escaping (Bool) -> () ) {
+        let db = Firestore.firestore()
+        db.collection("spots").document(spot.documentID).collection("reviews").document(documentID).delete() { error in
+            if let error = error {
+                print("***** ERROR: deleting review documentID \(self.documentID) \(error.localizedDescription)")
+                    completed(false)
+            } else {
+                spot.updateAverageRating {
                     completed(true)
                 }
             }
